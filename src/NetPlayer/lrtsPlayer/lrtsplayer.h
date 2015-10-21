@@ -11,7 +11,10 @@ class lrtsPlayer : public QWidget
 public:
 	lrtsPlayer(QWidget *parent = 0, Qt::WFlags flags = 0);
 	~lrtsPlayer();
-
+public slots:
+	void slot_text();
+private:
+	void parser(std::string d);
 private:
 	Ui::lrtsPlayerClass ui;
 };

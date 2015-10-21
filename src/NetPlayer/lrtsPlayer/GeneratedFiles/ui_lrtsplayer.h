@@ -14,6 +14,7 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QHeaderView>
+#include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,12 +22,16 @@ QT_BEGIN_NAMESPACE
 class Ui_lrtsPlayerClass
 {
 public:
+    QPushButton *pushButton;
 
     void setupUi(QWidget *lrtsPlayerClass)
     {
         if (lrtsPlayerClass->objectName().isEmpty())
             lrtsPlayerClass->setObjectName(QString::fromUtf8("lrtsPlayerClass"));
         lrtsPlayerClass->resize(600, 400);
+        pushButton = new QPushButton(lrtsPlayerClass);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(80, 140, 75, 23));
 
         retranslateUi(lrtsPlayerClass);
 
@@ -36,6 +41,7 @@ public:
     void retranslateUi(QWidget *lrtsPlayerClass)
     {
         lrtsPlayerClass->setWindowTitle(QApplication::translate("lrtsPlayerClass", "lrtsPlayer", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("lrtsPlayerClass", "PushButton", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
