@@ -1,11 +1,13 @@
 #pragma once
 
+#define LRTSINDEX "http://www.lrts.me/index"
 //系统头文件
 #include <QtGui>
 #include <QtGui/QtGui>
 #include <QtCore/QtCore>
 
 #if defined WIN32 || defined _WIN32
+#include <iostream>
 #include <io.h>
 #include <winsock2.h>
 #include <Windows.h>
@@ -35,6 +37,9 @@
 #include <htmlcxx/html/ParserDom.h>
 #include <curl/curl.h>
 #include <curl/easy.h>
+#include "mylib/curlHttpRequestBase.h"
+#include "mylib/curlHttpRequest.h"
+#include "mylib/util.h"
 
 using namespace std;
 using namespace htmlcxx;

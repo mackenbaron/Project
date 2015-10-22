@@ -53,6 +53,21 @@
     <ClCompile Include="GeneratedFiles\qrc_lrtsplayer.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="ParseBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lrtsIndexHtmpParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lrtsSubPageTypeHtmlParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lrtsSubPageDateHtmlParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lrtsSubPagePageHtmlParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -60,6 +75,21 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_lrtsplayer.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lrtsIndexHtmpParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lrtsSubPageTypeHtmlParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lrtsSubPageDateHtmlParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lrtsSubPagePageHtmlParse.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,45 @@
+1.主页分类小说
+	http地址：http://www.lrts.me/index
+	解析div名 <div class="h-category container">
+		解析Item名 <li class="h-category-item">
+			解析子页地址 <a href="/book/category/1">
+			解析子页名称 <span>有声小说</span>
+2.子页分类列表
+	http前缀：http://www.lrts.me
+	解析子页数据 <div class="container">
+		解析子页分类 <section class="category-filter">
+			解析子页分类地址 <a class="active" href="/book/category/1">全部</a><a href="/book/category/8">都市传说</a>
+		解析子页数据 <div class="category-book"> <ul class="clearfix">
+			解析单个数据 <li class="book-item">
+				解析单详情个数据 <div class="book-item-r">
+					解析单个数据名字和地址 <a class="book-item-name" href="/book/22101">玄欲</a>
+					解析单个数据详情数据 <div class="book-item-info">
+						解析类型<span class="weaken">原著：</span>
+						解析名字<a class="author">张无羁</a>						
+						解析播放<span class="weaken">主播：</span>
+						解析名字<a class="g-user" href="/user/89098677">贰飛</a>
+				解析简介 <p class="book-item-desc weaken">
+				
+	解析页数 <div class="pager">
+		解析第几页 <a href="/book/category/1/recommend/2/20">2</a>
+		解析一共几页 <a class="ep" href="/book/category/1/recommend/139/20">139</a>
+3.解析Item数据 
+	播放地址 http://www.lrts.me/ajax/playlist/2/8770/2
+	解析Item详细数据 <div class="d-r">
+		解析名字 <h1 class="nowrap">
+		解析原著和播音 <ul class="d-grid nowrap">
+		解析类型 <ul class="d-grid">
+		解析章节 大小 日期 <ul class="d-grid">
+		解析播放信息 <div class="d-o d-book-o">
+			解析播放参数 <a class="d-p player-trigger" player-info="type=2&resourcesid=7840">
+	解析简介 <div class="d-desc f14">
+4.解析播放界面
+	解析简介 <div class="detail">
+		解析类型 章节 状态 内容简介
+	解析播放列表 <div class="section">
+		解析id和几数 <li id="section673661696" class="clearfix section-item section2">
+			解析单集详情 <div class="column1-l">
+				介绍 <span>第02集_乘龙</span>
+				播放地址 <input type="hidden" name="source" value="http://kting.info:81/asdb/fiction/dushi/cl/78m6t86j.mp3">
+			解析主讲 <div class="column2 nowrap"> 訫念，阑珊梦 </div>
+			解析时间 <div class="column3 nowrap"> 27:25 </div>
