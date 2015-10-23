@@ -44,7 +44,7 @@ void lrtsSubPagePageHtmlParse::pageHtml()
 				itemname = it->text();	
 				break;
 			}
-			
+
 
 		}
 	}
