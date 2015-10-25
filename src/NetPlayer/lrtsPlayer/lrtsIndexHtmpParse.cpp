@@ -20,7 +20,6 @@ void lrtsIndexHtmpParse::pageHtml()
 {
 	if(mlrtsIndexDate =="")
 	{
-		mSubPageItem.insert(std::make_pair("Error","Get Html Error"));
 		return ;
 	}
 	HTML::ParserDom parser;
@@ -28,27 +27,34 @@ void lrtsIndexHtmpParse::pageHtml()
 	tree<HTML::Node>::iterator it = dom.begin();
 	for(;it != dom.end();++it)
 	{
-		std::string itemurl="",itemname="";
-		std::string a = it->tagName();
-		if(_stricmp(it->tagName().c_str(), "li") == 0) 
+		if(_stricmp(it->tagName().c_str(), "li") == 0)
 		{
 			it->parseAttributes();
-			std::string _tempclass = it->attribute("class").second;
-			if(_tempclass == "h-category-item")
+			std::string _tempcalss = it->attribute("class").second;
+			if(_tempcalss == "h-category-item")
 			{
-				++it;
-				if(_stricmp(it->tagName().c_str(), "a") == 0)
+				lrtsIndexDateItem _item;
+				tree<HTML::Node>::iterator categoryItem = dom.begin(it);
+				for(;categoryItem!=dom.end();++categoryItem)
 				{
-					it->parseAttributes();
-					itemurl = it->attribute("href").second;
+					categoryItem->parseAttributes();
+					if (categoryItem->isTag() && (_stricmp(categoryItem->tagName().c_str(), "a")== 0))
+					{
+						_item.url = categoryItem->attribute("href").second;
+					}
+					if (categoryItem->isTag() && (_stricmp(categoryItem->tagName().c_str(), "img")== 0))
+					{
+						_item.pic = categoryItem->attribute("src").second;
+					}
+					if (categoryItem->isTag() && (_stricmp(categoryItem->tagName().c_str(), "span")== 0))
+					{
+						tree<HTML::Node>::iterator spanname = dom.begin(categoryItem);
+						spanname->parseAttributes();
+						_item.name= spanname->text();
+						break;
+					}					
 				}
-				++it;++it;
-				if(_stricmp(it->tagName().c_str(), "span") == 0)
-				{
-					++it;
-					itemname = it->text();
-				}
-				mSubPageItem.insert(std::make_pair(itemname,itemurl));
+				mSubPageItem.push_back(_item);
 			}
 		}
 	}

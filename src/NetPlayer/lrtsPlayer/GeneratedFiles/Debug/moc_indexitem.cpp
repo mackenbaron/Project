@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'lrtsplayer.h'
+** Meta object code from reading C++ file 'indexitem.h'
 **
-** Created: Sat Oct 24 21:44:03 2015
+** Created: Sun Oct 25 22:48:46 2015
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "StdAfx.h"
-#include "../../lrtsplayer.h"
+#include "../../indexitem.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'lrtsplayer.h' doesn't include <QObject>."
+#error "The header file 'indexitem.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
 #error "This file was generated using the moc from 4.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,7 +18,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_lrtsPlayer[] = {
+static const uint qt_meta_data_IndexItem[] = {
 
  // content:
        5,       // revision
@@ -34,33 +34,35 @@ static const uint qt_meta_data_lrtsPlayer[] = {
        0        // eod
 };
 
-static const char qt_meta_stringdata_lrtsPlayer[] = {
-    "lrtsPlayer\0"
+static const char qt_meta_stringdata_IndexItem[] = {
+    "IndexItem\0"
 };
 
-const QMetaObject lrtsPlayer::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_lrtsPlayer,
-      qt_meta_data_lrtsPlayer, 0 }
+const QMetaObject IndexItem::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_IndexItem,
+      qt_meta_data_IndexItem, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &lrtsPlayer::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &IndexItem::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *lrtsPlayer::metaObject() const
+const QMetaObject *IndexItem::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *lrtsPlayer::qt_metacast(const char *_clname)
+void *IndexItem::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_lrtsPlayer))
-        return static_cast<void*>(const_cast< lrtsPlayer*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_IndexItem))
+        return static_cast<void*>(const_cast< IndexItem*>(this));
+    if (!strcmp(_clname, "ParseBase"))
+        return static_cast< ParseBase*>(const_cast< IndexItem*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
-int lrtsPlayer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int IndexItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)

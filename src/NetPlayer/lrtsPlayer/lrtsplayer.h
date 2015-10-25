@@ -14,13 +14,11 @@ public:
 	~lrtsPlayer();
 	void addTypeTOcomboBox();
 public slots:
-	void slot_selctType(QString);
-	void slot_subselctType(QString);
 private:
 	Ui::lrtsPlayerClass ui;
 
 	lrtsIndexHtmpParse *mIndexHtml;
-	std::map<std::string,std::string> mMainType;
+	std::vector<lrtsIndexDateItem> mMainType;
 	std::map<std::string,std::string> msubType;
 	std::map<std::string,std::string> msubpage;
 };

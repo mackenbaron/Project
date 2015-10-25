@@ -1,5 +1,6 @@
 #pragma once
 
+#define LRTS "http://www.lrts.me"
 #define LRTSINDEX "http://www.lrts.me/index"
 //系统头文件
 #include <QtGui>
@@ -43,3 +44,21 @@
 
 using namespace std;
 using namespace htmlcxx;
+
+typedef struct _a
+{
+	std::string name;
+	std::string url;
+	std::string pic;
+}lrtsIndexDateItem;
+typedef struct _b
+{
+	std::string name;
+	std::string url;
+}lrtsSubTypeDateItem;
+
+typedef struct _c
+{
+	std::string name;
+	std::string url;
+}lrtsSubPage;
