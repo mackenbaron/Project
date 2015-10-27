@@ -1,8 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'lrtsplayer.ui'
 **
-** Created: Sun Oct 25 22:50:10 2015
-**      by: Qt User Interface Compiler version 4.7.1
+** Created by: Qt User Interface Compiler version 4.8.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
